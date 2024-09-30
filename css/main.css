@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 
 .hero {
   content: "";
-  background-image: url(/img_nice-view/mobile.png);
+  background-image: url(./img_nice-view/mobile.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 491px;
