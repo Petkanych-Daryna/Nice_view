@@ -1,7 +1,7 @@
 // ----------------hero------------------
 .hero {
   content: "";
-  background-image: url(img_nice-view/mobile.png);
+  background-image: url(../../img_nice-view/mobile.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 491px;
@@ -23,304 +23,44 @@
   line-height: 24px;
   text-align: center;
 }
-// --------------------work----------------------
-.work {
-  content: "";
-  background-image: url(img_nice-view/fon-work.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 677px;
-}
-.work-list {
-  background-color: white;
-  opacity: 0.9;
-
+.hero-block {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 20px;
-}
-.work-text {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-
-  width: 130px;
-  margin-top: 24px;
-  margin-bottom: 20px;
-}
-.work-subtitle-item {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-}
-.work-text-item {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 18px;
-
-  margin-top: 8px;
-  margin-bottom: 20px;
-}
-// -------------------apartment---------------
-.apartment {
-  margin-top: 60px;
-}
-.apartment-title {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 42px;
-}
-.apartment-item {
-  padding: 20px 30px;
-  &:hover {
-    border: 2px solid rgba(126, 109, 83, 1);
-    border-radius: 16px;
-  }
-}
-.apartment-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-top: 28px;
-}
-.apartment-subtitle {
-  font-family: Poppins;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 33.6px;
-  text-align: center;
-
-  margin-top: 20px;
-  margin-bottom: 8px;
-}
-.apartment-text {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 26px;
-  text-align: center;
-}
-.apartment-link {
-  margin-top: 48px;
-}
-// ----------------Infrastructure-----------------
-.fon-footer {
-  background-color: rgba(237, 233, 227, 1);
-  padding-top: 60px;
-}
-.Infrastructure {
-  content: "";
-  background-image: url(img_nice-view/Infrastructure.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 431px;
-  margin-bottom: 80px;
-  padding-top: 50px;
-}
-.Infrastructure-title {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 42px;
-  margin-bottom: 24px;
-}
-.Infrastructure-list {
-  background-color: white;
-  opacity: 0.7;
-  height: 321px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
-.Infrastructure-subtitle {
+.hero-button {
   color: #2d2a22;
-  font-size: 14px;
-  font-family: Poppins;
-  font-weight: 600;
-  word-wrap: break-word;
-
-
-padding: 14px 15px;
-  border: black solid 2px;
-  border-radius: 50%;
-}
-.Infrastructure-text {
-  color: #7e6d53;
-  font-size: 14px;
-  font-family: Poppins;
-  font-weight: 500;
-  word-wrap: break-word;
-}
-// ----------------gallery-----------------
-.gallery {
-  margin-bottom: 60px;
-}
-.gallery-title {
-  color: #7e6d53;
-  font-size: 40px;
-  font-family: Poppins;
-  font-weight: 500;
-  word-wrap: break-word;
-  margin-bottom: 25px;
-}
-// -----------------contact----------------
-.contact-title {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
-}
-.contact-text {
-  color: rgba(126, 109, 83, 1);
-  font-family: Poppins;
   font-size: 20px;
-  font-weight: 300;
-  line-height: 30px;
-  text-align: center;
-
-  margin-bottom: 26px;
-}
-.contact-list {
-  background-color: #7e6d53;
-  border-radius: 16px;
-  padding: 24px 20px;
-  height: 218px;
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-bottom: 60px;
-}
-.contact-link {
-  color: white;
-  font-size: 14px;
-  font-family: Poppins;
-  font-weight: 300;
-  word-wrap: break-word;
-  margin-left: 8px;
-}
-.contact-item {
-  margin-bottom: 15px;
-}
-.contact-btn {
-  color: #2d2a22;
-  font-size: 16px;
   font-family: Poppins;
   font-weight: 300;
   word-wrap: break-word;
 
+  padding: 10px 40px;
   border: none;
-  padding: 14px 80px;
-  border-radius: 10px;
+  border-radius: 16px;
+  margin-top: 256px;
 
   &:hover {
     color: white;
     background-color: #7e6d53;
-    border: #2d2a22 solid 1px;
   }
 }
-// -------------footer---------------
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: linear-gradient(278deg, #2d2a22, #7e6d53);
-  padding-top: 20px;
-}
-.footer-nav-title {
-  color: white;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.78px;
-}
-.footer-nav {
-  margin-left: 5px;
-}
-.footer-nav-link {
-  color: white;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.94px;
-}
-.footer-nav-item {
-  margin-top: 16px;
-}
-.footer-nav {
-  width: 92px;
-}
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
-  .footer-logo {
-    display: none;
+@media screen and (min-width: 480px) {
+  .hero {
+    content: "";
+    background-image: url(../../img_nice-view/fon-tablet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 491px;
+    margin-bottom: 80px;
   }
 }
-// ---------------connection--------------
-.contact-block {
-  width: 135px;
-  margin-left: 50px;
-}
-.contact-title-block {
-  color: white;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.78px;
-}
-.connection-item {
-  color: white;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.94px;
-
-  margin-top: 16px;
-}
-.connection-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-// ------------------tabs------------------
-.tabs-list {
-  display: flex;
-  gap: 20px;
-
-  margin-left: 5px;
-  margin-top: 29px;
-}
-.tabs-svg {
-  fill: #fcfcfb;
-  width: 24px;
-  height: 24px;
-
-  &:hover {
-    fill: #7f6e54;
+@media screen and (min-width: 768px) {
+  .hero {
+    content: "";
+    background-image: url(../../img_nice-view/fon-komp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 491px;
+    margin-bottom: 80px;
   }
-}
-// ----------------block-----------------
-.text {
-  color: #979797;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  text-align: center;
-
-  margin-top: 28px;
-  margin-bottom: 8px;
-}
-.block-span {
-  color: white;
-  text-decoration: underline;
 }

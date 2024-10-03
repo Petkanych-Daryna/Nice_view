@@ -1,0 +1,72 @@
+// ----------------Infrastructure-----------------
+.fon-footer {
+    background-color: rgba(237, 233, 227, 1);
+    padding-top: 60px;
+  }
+  .Infrastructure {
+    content: "";
+    background-image: url(../../img_nice-view/Infrastructure.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 431px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+  }
+  .Infrastructure-title {
+    color: rgba(126, 109, 83, 1);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 24px;
+  }
+  .Infrastructure-list {
+    background-color: white;
+    opacity: 0.7;
+    width: 290px;
+    height: 351px;
+    padding: 24px 18px;
+  border-radius: 10px;
+  }
+  .Infrastructure-item {
+    height: 101px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .Infrastructure-block{
+    width: 105px;
+    height: 105px;
+  
+    padding: 20px;
+    border: black solid 2px;
+    border-radius: 100%;
+  }
+  .Infrastructure-subtitle {
+    color: #2d2a22;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  .Infrastructure-text {
+    color: #7e6d53;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  @media screen and (min-width:480px) {
+    .Infrastructure {
+      content: "";
+      background-image: url(../../img_nice-view/fon-Infrastructure.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 431px;
+      margin-bottom: 80px;
+      padding-top: 50px;
+    }
+  }

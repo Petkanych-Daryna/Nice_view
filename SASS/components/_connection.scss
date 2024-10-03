@@ -1,0 +1,25 @@
+// ---------------connection--------------
+.contact-block {
+    width: 135px;
+    margin-left: 50px;
+  }
+  .contact-title-block {
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+  }
+  .connection-item {
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+  
+    margin-top: 16px;
+  }
+  .connection-list {
+    display: flex;
+    flex-wrap: wrap;
+  }

@@ -1,0 +1,71 @@
+// -------------------apartment---------------
+.apartment {
+    margin-top: 60px;
+  }
+  .apartment-title {
+    color: rgba(126, 109, 83, 1);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+  .apartment-item {
+    padding: 20px 30px;
+    &:hover {
+      border: 2px solid rgba(126, 109, 83, 1);
+      border-radius: 16px;
+    }
+  }
+  .apartment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    margin-top: 28px;
+  }
+  .apartment-subtitle {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: center;
+  
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  .apartment-text {
+    color: rgba(126, 109, 83, 1);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+  }
+  .apartment-link {
+    margin-top: 48px;
+  }
+  .apartment-block {
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 61px;
+    margin-bottom: 32px;
+  }
+  .apartment-btn {
+    color: #fcfcfb;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  
+    background-color: #7e6d53;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 16px;
+  
+    &:hover {
+      background-color: white;
+      border: #7e6d53 solid 1px;
+      color: #7e6d53;
+    }
+  }

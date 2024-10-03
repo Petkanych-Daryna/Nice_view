@@ -11,6 +11,9 @@
 .header-logo{
     font-size: 20px;
     color: #ffffff;
+    padding-left: 15px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 .nav-item{
     color: #ffffff;
@@ -28,4 +31,63 @@ font-weight: 300;
 line-height: 24px;
 text-align: left;
 
+}
+.burger{
+    display: flex;
+    align-items: center;
+}
+.open-menu{
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+.close-block{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.close-menu{
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        
+        gap: 24px;
+        margin-top: 30px;
+    }  
+    .burger{
+        display: flex;
+        align-items: center;
+        gap: 220px;
+    }
+    .header-element{
+        display: none;
+    }
+}
+@media screen and (min-width: 767.98px) and (max-width: 1200px){
+    .header-element{
+        display: none;
+    }
+    .open-menu{
+        display: none;
+      }
+      .close-menu{
+        display: none;
+      }
+      .burger{
+        display: flex;
+        gap: 80px;
+        
+    }
+    .nav-list{
+        gap: 32px;
+    }
 }

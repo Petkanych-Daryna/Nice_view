@@ -34,6 +34,39 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   padding: 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms, visibility 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
+  }
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .backdrop.is-hidden .modal-menu {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  .modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 568px;
+    padding: 15px;
+    background-image: linear-gradient(2deg, #2d2a22, #7e6d53);
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 1000ms;
+  }
+}
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +82,9 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 .header-logo {
   font-size: 20px;
   color: #ffffff;
+  padding-left: 15px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .nav-item {
@@ -68,9 +104,68 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   text-align: left;
 }
 
+.burger {
+  display: flex;
+  align-items: center;
+}
+
+.open-menu {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+.close-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-menu {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .burger {
+    display: flex;
+    align-items: center;
+    gap: 220px;
+  }
+  .header-element {
+    display: none;
+  }
+}
+@media screen and (min-width: 767.98px) and (max-width: 1200px) {
+  .header-element {
+    display: none;
+  }
+  .open-menu {
+    display: none;
+  }
+  .close-menu {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    gap: 80px;
+  }
+  .nav-list {
+    gap: 32px;
+  }
+}
 .hero {
   content: "";
-  background-image: url(img_nice-view/mobile.png);
+  background-image: url(../../img_nice-view/mobile.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 491px;
@@ -95,15 +190,57 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   text-align: center;
 }
 
+.hero-block {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-button {
+  color: #2d2a22;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 256px;
+}
+.hero-button:hover {
+  color: white;
+  background-color: #7e6d53;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    content: "";
+    background-image: url(../../img_nice-view/fon-tablet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 491px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    content: "";
+    background-image: url(../../img_nice-view/fon-komp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 491px;
+    margin-bottom: 80px;
+  }
+}
 .work {
   content: "";
-  background-image: url(img_nice-view/fon-work.png);
+  background-image: url(../../img_nice-view/fon-work.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 677px;
 }
 
 .work-list {
+  margin: 0;
   background-color: white;
   opacity: 0.9;
   display: flex;
@@ -140,6 +277,26 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .work {
+    content: "";
+    background-image: url(../../img_nice-view/fon-work-tablet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 630px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-list {
+    margin: 0;
+    background-color: white;
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+}
 .apartment {
   margin-top: 60px;
 }
@@ -190,6 +347,30 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   margin-top: 48px;
 }
 
+.apartment-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 61px;
+  margin-bottom: 32px;
+}
+
+.apartment-btn {
+  color: #fcfcfb;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  word-wrap: break-word;
+  background-color: #7e6d53;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 16px;
+}
+.apartment-btn:hover {
+  background-color: white;
+  border: #7e6d53 solid 1px;
+  color: #7e6d53;
+}
+
 .fon-footer {
   background-color: rgb(237, 233, 227);
   padding-top: 60px;
@@ -197,7 +378,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 
 .Infrastructure {
   content: "";
-  background-image: url(img_nice-view/Infrastructure.png);
+  background-image: url(../../img_nice-view/Infrastructure.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 431px;
@@ -217,10 +398,27 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 .Infrastructure-list {
   background-color: white;
   opacity: 0.7;
-  height: 321px;
+  width: 290px;
+  height: 351px;
+  padding: 24px 18px;
+  border-radius: 10px;
+}
+
+.Infrastructure-item {
+  height: 101px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Infrastructure-block {
+  width: 105px;
+  height: 105px;
+  padding: 20px;
+  border: black solid 2px;
+  border-radius: 100%;
 }
 
 .Infrastructure-subtitle {
@@ -229,9 +427,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   font-family: Poppins;
   font-weight: 600;
   word-wrap: break-word;
-  padding: 14px 15px;
-  border: black solid 2px;
-  border-radius: 50%;
+  text-align: center;
 }
 
 .Infrastructure-text {
@@ -242,6 +438,17 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   word-wrap: break-word;
 }
 
+@media screen and (min-width: 480px) {
+  .Infrastructure {
+    content: "";
+    background-image: url(../../img_nice-view/fon-Infrastructure.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 431px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+  }
+}
 .gallery {
   margin-bottom: 60px;
 }
