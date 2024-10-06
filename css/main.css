@@ -294,7 +294,19 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 20px;
+    padding-top: 30px;
+    justify-content: space-evenly;
+  }
+  .img-hmarochos {
+    width: 500px;
+    height: 500px;
+  }
+  .work-item {
+    margin-left: 15px;
+  }
+  .work-item-li {
+    text-align: center;
+    margin-top: 60px;
   }
 }
 .apartment {
@@ -443,10 +455,24 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
     content: "";
     background-image: url(../../img_nice-view/fon-Infrastructure.png);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     height: 431px;
     margin-bottom: 80px;
     padding-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Infrastructure-list {
+    background-color: white;
+    opacity: 0.7;
+    width: 290px;
+    height: 351px;
+    padding: 24px 18px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 350px;
   }
 }
 .gallery {
@@ -520,11 +546,26 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   border: #2d2a22 solid 1px;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+  }
+}
 .footer {
   display: flex;
   flex-wrap: wrap;
   background-image: linear-gradient(278deg, #2d2a22, #7e6d53);
   padding-top: 20px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .footer-nav-title {
@@ -558,6 +599,20 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
   .footer-logo {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-block {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  .footer-logo {
+    margin-right: 100px;
   }
 }
 .contact-block {
@@ -603,6 +658,12 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
   fill: #7f6e54;
 }
 
+@media screen and (min-width: 768px) {
+  .tabs-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .text {
   color: #979797;
   font-family: Roboto;

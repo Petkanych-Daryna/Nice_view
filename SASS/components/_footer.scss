@@ -5,6 +5,12 @@
     background-image: linear-gradient(278deg, #2d2a22, #7e6d53);
     padding-top: 20px;
   }
+  .footer-logo{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
   .footer-nav-title {
     color: white;
     font-family: Inter;
@@ -31,5 +37,20 @@
   @media screen and (min-width: 320px) and (max-width: 767.98px) {
     .footer-logo {
       display: none;
+    }
+
+  }
+  @media screen and (min-width:768px){
+    .footer-block{
+      display: flex;
+      align-items: baseline;
+    }
+    .footer{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+    }
+    .footer-logo{
+      margin-right: 100px;
     }
   }

@@ -15,3 +15,9 @@
       fill: #7f6e54;
     }
   }
+  @media screen and (min-width:768px){
+    .tabs-list{
+      display: flex;
+      flex-direction: column;
+    }
+  }
