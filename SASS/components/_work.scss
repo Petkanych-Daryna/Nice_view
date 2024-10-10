@@ -79,3 +79,13 @@
       margin-top: 60px;
     }
   }
+  @media screen and (min-width:1200px) {
+    .work {
+      content: "";
+      background-image: url(../../img_nice-view/work-komp.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      height: 630px;
+    }
+  }
