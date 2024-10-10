@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 }
 .hero {
   content: "";
-  background-image: url(../../img_nice-view/mobile.png);
+  background-image: url(../img_nice-view/mobile.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 491px;
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 @media screen and (min-width: 768px) {
   .hero {
     content: "";
-    background-image: url(../../img_nice-view/fon-komp.png);
+    background-image: url(../img_nice-view/fon-komp.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 491px;
@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 @media screen and (min-width: 1200px) {
   .hero {
     content: "";
-    background-image: url(../../img_nice-view/fon-komp.png);
+    background-image: url(../img_nice-view/fon-komp.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 720px;
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 }
 .work {
   content: "";
-  background-image: url(../../img_nice-view/fon-work.png);
+  background-image: url(../img_nice-view/fon-work.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 677px;
@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 @media screen and (min-width: 480px) {
   .work {
     content: "";
-    background-image: url(../../img_nice-view/fon-work-tablet.png);
+    background-image: url(../img_nice-view/fon-work-tablet.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 630px;
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6, html, main, body, p, ol, ul, li {
 @media screen and (min-width: 1200px) {
   .work {
     content: "";
-    background-image: url(../../img_nice-view/work-komp.png);
+    background-image: url(../img_nice-view/work-komp.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 630px;
